@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TextNavigator : MonoBehaviour
 {
-    [SerializeField] Text[] dialogueTexts;
+    [SerializeField] Text[] dialogueTexts = null;
     private Text dialogueText;
     private int dialogueTextIdx;
 
