@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
         Run();
         FlipSprite();
         Jump();
+        Shoot();
     }
 
     private void Run()
@@ -57,6 +58,16 @@ public class Player : MonoBehaviour
         bool jumping = Mathf.Abs(rigidBody.velocity.y) > epsilon;
         animator.SetBool("jumping", jumping);
         
+    }
+
+    private void Shoot()
+    {
+        if (!(rigidBody.velocity.x < epsilon && rigidBody.velocity.y < epsilon)) { return; }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            animator.SetTrigger("shooting");
+        }
     }
 
     private void FlipSprite()
