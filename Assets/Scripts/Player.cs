@@ -10,7 +10,8 @@ public class Player : MonoBehaviour
 
     Rigidbody2D rigidBody;
     Animator animator;
-    Collider2D playerCollider;
+    CapsuleCollider2D playerCollider;
+    BoxCollider2D feetCollider;
     float gravityScaleInitial;
 
     float epsilon = 0.0001f;
@@ -20,7 +21,8 @@ public class Player : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        playerCollider = GetComponent<Collider2D>();
+        playerCollider = GetComponent<CapsuleCollider2D>();
+        feetCollider = GetComponent<BoxCollider2D>();
         gravityScaleInitial = rigidBody.gravityScale;
     }
 
@@ -84,7 +86,7 @@ public class Player : MonoBehaviour
             return;
         }
 
-        if (!playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
+        if (!feetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
 
         if (Input.GetButtonDown("Jump"))
         {
