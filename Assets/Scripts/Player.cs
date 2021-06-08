@@ -6,10 +6,12 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float runSpeed = 1.0f;
     [SerializeField] float jumpSpeed = 28f;
+    [SerializeField] float climbSpeed = 1.0f;
 
     Rigidbody2D rigidBody;
     Animator animator;
     Collider2D playerCollider;
+    float gravityScaleInitial;
 
     float epsilon = 0.0001f;
 
@@ -19,6 +21,7 @@ public class Player : MonoBehaviour
         rigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerCollider = GetComponent<Collider2D>();
+        gravityScaleInitial = rigidBody.gravityScale;
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class Player : MonoBehaviour
         FlipSprite();
         Jump();
         Shoot();
+        Climb();
     }
 
     private void Run()
@@ -45,8 +49,41 @@ public class Player : MonoBehaviour
 
     }
 
+    private void Climb()
+    {
+        if (!playerCollider.IsTouchingLayers(LayerMask.GetMask("Climbing"))) 
+        {
+            animator.SetBool("climbing", false);
+            rigidBody.gravityScale = gravityScaleInitial;
+            return; 
+        }
+
+        rigidBody.gravityScale = 0f;
+
+        float controlThrow = Input.GetAxis("Vertical");
+
+        Vector2 climbVelocity = new Vector2(rigidBody.velocity.x, controlThrow * climbSpeed);
+
+        rigidBody.velocity = climbVelocity;
+
+        bool movingVertical = Mathf.Abs(rigidBody.velocity.y) > Mathf.Epsilon;
+
+        animator.SetBool("climbing", movingVertical);
+                             
+
+
+
+
+    }
+
     private void Jump()
     {
+        if (playerCollider.IsTouchingLayers(LayerMask.GetMask("Climbing")))
+        {
+            animator.SetBool("jumping", false);
+            return;
+        }
+
         if (!playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) { return; }
 
         if (Input.GetButtonDown("Jump"))
