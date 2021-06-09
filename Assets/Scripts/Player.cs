@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpSpeed = 28f;
     [SerializeField] float climbSpeed = 1.0f;
 
+    private bool currentlyShooting = false;
+
     Rigidbody2D rigidBody;
     Animator animator;
     CapsuleCollider2D playerCollider;
@@ -103,11 +105,25 @@ public class Player : MonoBehaviour
     {
         if (!(rigidBody.velocity.x < epsilon && rigidBody.velocity.y < epsilon)) { return; }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (currentlyShooting) { return; }
+
+        if (Input.GetKeyUp(KeyCode.F))
         {
             animator.SetTrigger("shooting");
         }
     }
+
+    public void BlockShooting()
+    {
+        currentlyShooting = true;
+    }
+
+    public void AllowShooting()
+    {
+        currentlyShooting = false;
+    }
+
+    
 
     private void FlipSprite()
     {
