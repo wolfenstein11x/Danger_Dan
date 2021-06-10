@@ -15,8 +15,8 @@ TagManager:
   - 
   - Ground
   - Climbing
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 
@@ -47,12 +47,15 @@ TagManager:
   - name: Climbing
     uniqueID: 2658191941
     locked: 0
-  - name: Foreground
-    uniqueID: 2470085729
-    locked: 0
   - name: Projectile
     uniqueID: 784731571
     locked: 0
+  - name: Enemy
+    uniqueID: 3745888171
+    locked: 0
   - name: Player
     uniqueID: 751152191
+    locked: 0
+  - name: Foreground
+    uniqueID: 2470085729
     locked: 0

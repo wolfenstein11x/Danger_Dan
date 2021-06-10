@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 3cedb4da25e8e9e44a33c36cbad2a0ce
+guid: 191eb9812e3edee4082a9a483646375c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7329244995766517359
-    second: dan_idle_run_0
+      213: 961879757735228568
+    second: venezuelan_sprite_sheet_0
   - first:
-      213: 288865224036916299
-    second: dan_idle_run_1
+      213: -8788650709858340888
+    second: venezuelan_sprite_sheet_1
   - first:
-      213: -2308579837532332275
-    second: dan_idle_run_2
+      213: -6472338556341272211
+    second: venezuelan_sprite_sheet_2
   - first:
-      213: 7718780532461788381
-    second: dan_idle_run_3
+      213: 4908341649035025864
+    second: venezuelan_sprite_sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,13 +111,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dan_idle_run_0
+      name: venezuelan_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 132
-        width: 52
-        height: 111
+        x: 14
+        y: 128
+        width: 73
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +125,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6ef87cdd75b6b560800000000000000
-      internalID: 7329244995766517359
+      spriteID: 894727c1b88495d00800000000000000
+      internalID: 961879757735228568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dan_idle_run_1
+      name: venezuelan_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 161
-        y: 133
-        width: 63
-        height: 110
+        x: 142
+        y: 128
+        width: 73
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4c1faa0461420400800000000000000
-      internalID: 288865224036916299
+      spriteID: 8efa8ef5eb0780680800000000000000
+      internalID: -8788650709858340888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dan_idle_run_2
+      name: venezuelan_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 39
-        y: 4
-        width: 52
-        height: 111
+        x: 14
+        y: 0
+        width: 73
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0f91408ed646ffd0800000000000000
-      internalID: -2308579837532332275
+      spriteID: d61c63bff52ad26a0800000000000000
+      internalID: -6472338556341272211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dan_idle_run_3
+      name: venezuelan_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 162
-        y: 7
-        width: 70
-        height: 108
+        x: 142
+        y: 0
+        width: 73
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,8 +188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddcd5989ffd9e1b60800000000000000
-      internalID: 7718780532461788381
+      spriteID: 8cddcfa69beed1440800000000000000
+      internalID: 4908341649035025864
       vertices: []
       indices: 
       edges: []

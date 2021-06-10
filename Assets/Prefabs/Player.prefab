@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2927645193142033017}
   - component: {fileID: 2927645193142033019}
   - component: {fileID: 2927645193142033020}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,6 +122,8 @@ MonoBehaviour:
   runSpeed: 8
   jumpSpeed: 28
   climbSpeed: 5
+  bullet: {fileID: -4743793702498700760, guid: f8369e668b4e04144af0d8e61a922a47, type: 3}
+  shootPoint: {fileID: 4318540311214681967}
 --- !u!50 &2927645193142033017
 Rigidbody2D:
   serializedVersion: 4
@@ -156,8 +158,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.05316657, y: 0.0031408072}
-  m_Size: {x: 0.512488, y: 1.1037185}
+  m_Offset: {x: -0.12815166, y: 0.1290561}
+  m_Size: {x: 0.87512445, y: 2.0203831}
   m_Direction: 0
 --- !u!61 &2927645193142033020
 BoxCollider2D:
@@ -172,18 +174,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04005456, y: -0.4901464}
+  m_Offset: {x: -0.11608064, y: -0.97366226}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.71, y: 1.11}
+    oldSize: {x: 1.42, y: 2.22}
     newSize: {x: 0.52, y: 1.11}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2743392, y: 0.13126469}
+  m_Size: {x: 0.66719556, y: 0.27229047}
   m_EdgeRadius: 0
 --- !u!1 &8011277497711784396
 GameObject:
@@ -194,7 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4318540311214681967}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: shootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
