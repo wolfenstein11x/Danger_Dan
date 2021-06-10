@@ -256,26 +256,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1273008213 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2927645193142033013, guid: 36780c7456b452d42add1346b88aca0f,
-    type: 3}
-  m_PrefabInstance: {fileID: 2927645194364701216}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1273008214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273008213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bf9731ee28b9214ab43206841d74508, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: -4743793702498700760, guid: f8369e668b4e04144af0d8e61a922a47, type: 3}
-  shootPoint: {fileID: 44040467}
 --- !u!1 &1453920125
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,6 +3218,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2927645193142033018, guid: 36780c7456b452d42add1346b88aca0f,
+        type: 3}
+      propertyPath: shootPoint
+      value: 
+      objectReference: {fileID: 44040467}
+    - target: {fileID: 2927645193142033018, guid: 36780c7456b452d42add1346b88aca0f,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: -4743793702498700760, guid: f8369e668b4e04144af0d8e61a922a47,
+        type: 3}
     - target: {fileID: 4594555788152890705, guid: 36780c7456b452d42add1346b88aca0f,
         type: 3}
       propertyPath: m_SortingLayerID

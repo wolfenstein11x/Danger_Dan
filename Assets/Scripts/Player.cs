@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     [SerializeField] float runSpeed = 1.0f;
     [SerializeField] float jumpSpeed = 28f;
     [SerializeField] float climbSpeed = 1.0f;
+    [SerializeField] Bullet bullet = null;
+    [SerializeField] Transform shootPoint = null;
 
     private bool currentlyShooting = false;
 
@@ -37,6 +39,8 @@ public class Player : MonoBehaviour
         Shoot();
         Climb();
     }
+
+    
 
     private void Run()
     {
@@ -107,23 +111,21 @@ public class Player : MonoBehaviour
 
         if (currentlyShooting) { return; }
 
-        if (Input.GetKeyUp(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             animator.SetTrigger("shooting");
+            FireBullet();
         }
     }
 
-    public void BlockShooting()
+    private void FireBullet()
     {
-        currentlyShooting = true;
+        float direciton = transform.localScale.x;
+
+        Bullet newBullet = Instantiate(bullet, shootPoint.position, Quaternion.identity) as Bullet;
     }
 
-    public void AllowShooting()
-    {
-        currentlyShooting = false;
-    }
 
-    
 
     private void FlipSprite()
     {
