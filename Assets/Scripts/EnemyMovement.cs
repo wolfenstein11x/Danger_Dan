@@ -6,6 +6,8 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
 
+    private int moveScale = 1;
+
     Rigidbody2D rigidBody;
 
     // Start is called before the first frame update
@@ -19,12 +21,12 @@ public class EnemyMovement : MonoBehaviour
     {
         if (IsFacingNormally())
         {
-            rigidBody.velocity = new Vector2(-moveSpeed, 0f);
+            rigidBody.velocity = new Vector2(-moveSpeed * moveScale, 0f);
         }
 
         else
         {
-            rigidBody.velocity = new Vector2(moveSpeed, 0f);
+            rigidBody.velocity = new Vector2(moveSpeed * moveScale, 0f);
         }
         
     }
@@ -37,5 +39,15 @@ public class EnemyMovement : MonoBehaviour
     private bool IsFacingNormally()
     {
         return transform.localScale.x > 0;
+    }
+
+    public void HaltMotion()
+    {
+        moveScale = 0;
+    }
+
+    public void ResumeMotion()
+    {
+        moveScale = 1;
     }
 }

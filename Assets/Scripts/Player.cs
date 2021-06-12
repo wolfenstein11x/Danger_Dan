@@ -10,8 +10,6 @@ public class Player : MonoBehaviour
     [SerializeField] Bullet bullet = null;
     [SerializeField] Transform shootPoint = null;
 
-    private bool currentlyShooting = false;
-
     Rigidbody2D rigidBody;
     Animator animator;
     CapsuleCollider2D playerCollider;
@@ -109,8 +107,6 @@ public class Player : MonoBehaviour
     {
         if (!(rigidBody.velocity.x < epsilon && rigidBody.velocity.y < epsilon)) { return; }
 
-        if (currentlyShooting) { return; }
-
         if (Input.GetKeyDown(KeyCode.F))
         {
             animator.SetTrigger("shooting");
@@ -120,8 +116,6 @@ public class Player : MonoBehaviour
 
     private void FireBullet()
     {
-        float direciton = transform.localScale.x;
-
         Bullet newBullet = Instantiate(bullet, shootPoint.position, Quaternion.identity) as Bullet;
     }
 
