@@ -445,7 +445,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: But anyway, let's get down to business. I have a mission for you...
+  m_Text: sample text
 --- !u!222 &1509238430
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -604,7 +604,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: We can swap stories, since you were a firefighter, and I was special forces...
+  m_Text: sample text
 --- !u!222 &2044157131
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -682,7 +682,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I need you to deploy to Venezuela and track down some people...
+  m_Text: sample text
 --- !u!222 &2059156079
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -761,7 +761,7 @@ PrefabInstance:
     - target: {fileID: 7029064611636222198, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_Text
-      value: Hey Dan Gerstner! I'm your old friend, Lance Charter, remember me?
+      value: Danger Dan! I have a mission for you
       objectReference: {fileID: 0}
     - target: {fileID: 7029064611636222199, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
@@ -796,8 +796,7 @@ PrefabInstance:
     - target: {fileID: 7029064612105247219, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_Text
-      value: Of course you do! How could you forget? We had the same handler, after
-        all...
+      value: I need you to go to Venezuela on a top secret mission
       objectReference: {fileID: 0}
     - target: {fileID: 7029064612105247228, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
@@ -842,8 +841,7 @@ PrefabInstance:
     - target: {fileID: 7029064612274457630, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_Text
-      value: Feel free to come in here anytime just to shoot the shit, and have some
-        whiskey...
+      value: sample text
       objectReference: {fileID: 0}
     - target: {fileID: 7029064612274457631, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
