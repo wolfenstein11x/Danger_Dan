@@ -9,15 +9,19 @@ public class EnemyBullet : MonoBehaviour
 
     public float lifeTime = 3f;
 
+    private float direction;
+
     // Start is called before the first frame update
     void Start()
     {
+        direction = FindObjectOfType<EnemyMovement>().direction;
         Destroy(gameObject, lifeTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * bulletSpeed * Time.deltaTime);
+        // multiply by -direction because enemies oriented front side left
+        transform.Translate(Vector2.right * -direction * bulletSpeed * Time.deltaTime);
     }
 }

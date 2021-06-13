@@ -6,6 +6,8 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 1f;
 
+    public float direction = 1f;
+
     private int moveScale = 1;
 
     Rigidbody2D rigidBody;
@@ -19,6 +21,9 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        direction = transform.localScale.x;
+        Debug.Log(direction);
+
         if (IsFacingNormally())
         {
             rigidBody.velocity = new Vector2(-moveSpeed * moveScale, 0f);
