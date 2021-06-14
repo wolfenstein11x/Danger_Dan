@@ -9,14 +9,15 @@ public class Player : MonoBehaviour
     [SerializeField] float climbSpeed = 1.0f;
     [SerializeField] Bullet bullet = null;
     [SerializeField] Transform shootPoint = null;
+    [SerializeField] Vector2 deathKick = new Vector2(2f, 25f);
 
-    Rigidbody2D rigidBody;
-    Animator animator;
-    CapsuleCollider2D playerCollider;
-    BoxCollider2D feetCollider;
-    float gravityScaleInitial;
-
-    float epsilon = 0.0001f;
+    private Rigidbody2D rigidBody;
+    private Animator animator;
+    private CapsuleCollider2D playerCollider;
+    private BoxCollider2D feetCollider;
+    private float gravityScaleInitial;
+    private float epsilon = 0.0001f;
+    private bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -31,11 +32,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isAlive) { return; }
+
         Run();
         FlipSprite();
         Jump();
         Shoot();
         Climb();
+        Die();
     }
 
     
@@ -103,6 +107,18 @@ public class Player : MonoBehaviour
         
     }
 
+    private void Die()
+    {
+        if (playerCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")) ||
+            feetCollider.IsTouchingLayers(LayerMask.GetMask("Enemy")))
+        {
+            isAlive = false;
+            animator.SetTrigger("die");
+            rigidBody.velocity = deathKick;
+        }
+        
+    }
+
     private void Shoot()
     {
         if (!(rigidBody.velocity.x < epsilon && rigidBody.velocity.y < epsilon)) { return; }
@@ -129,5 +145,10 @@ public class Player : MonoBehaviour
         {
             transform.localScale = new Vector2(Mathf.Sign(rigidBody.velocity.x), 1f);
         }
+    }
+
+    public void StopTime()
+    {
+        Time.timeScale = 0;
     }
 }

@@ -124,6 +124,7 @@ MonoBehaviour:
   climbSpeed: 5
   bullet: {fileID: -4743793702498700760, guid: f8369e668b4e04144af0d8e61a922a47, type: 3}
   shootPoint: {fileID: 4318540311214681967}
+  deathKick: {x: 2, y: 25}
 --- !u!50 &2927645193142033017
 Rigidbody2D:
   serializedVersion: 4
@@ -158,8 +159,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.057638884, y: 0.1290561}
-  m_Size: {x: 0.7340989, y: 2.0203831}
+  m_Offset: {x: -0.057638884, y: 0.144166}
+  m_Size: {x: 0.7340989, y: 1.9901633}
   m_Direction: 0
 --- !u!61 &2927645193142033020
 BoxCollider2D:
