@@ -57,6 +57,9 @@ TagManager:
   - name: Player
     uniqueID: 751152191
     locked: 0
+  - name: Explosion
+    uniqueID: 3114010941
+    locked: 0
   - name: Foreground
     uniqueID: 2470085729
     locked: 0
