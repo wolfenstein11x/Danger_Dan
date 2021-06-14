@@ -20,7 +20,7 @@ TagManager:
   - Player
   - Explosion
   - Projectile
-  - 
+  - Hazards
   - 
   - 
   - 
@@ -53,6 +53,9 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 3745888171
+    locked: 0
+  - name: Hazards
+    uniqueID: 1423769369
     locked: 0
   - name: Player
     uniqueID: 751152191

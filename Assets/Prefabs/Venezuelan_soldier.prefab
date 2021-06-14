@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2624817983457317065}
   - component: {fileID: 7303626974882665440}
   m_Layer: 10
-  m_Name: Venezuelan
+  m_Name: Venezuelan_soldier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
