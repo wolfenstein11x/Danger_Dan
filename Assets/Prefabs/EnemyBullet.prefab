@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2413039499089713092}
   m_Layer: 10
   m_Name: EnemyBullet
-  m_TagString: Untagged
+  m_TagString: projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 13
+  explosionFX: {fileID: 3558518459022083281, guid: 5feda4b7a2bc63a4085cbc909929ca3c,
+    type: 3}
+  explosionTime: 0.5
   lifeTime: 1
 --- !u!58 &2413039499089713092
 CircleCollider2D:

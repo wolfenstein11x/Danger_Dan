@@ -9,6 +9,7 @@ public class EnemyMovement : MonoBehaviour
     public float direction = 1f;
 
     private int moveScale = 1;
+    private CapsuleCollider2D enemyCollider;
 
     Rigidbody2D rigidBody;
 
@@ -16,13 +17,15 @@ public class EnemyMovement : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        enemyCollider = GetComponent<CapsuleCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Die();
+
         direction = transform.localScale.x;
-        Debug.Log(direction);
 
         if (IsFacingNormally())
         {
@@ -36,9 +39,19 @@ public class EnemyMovement : MonoBehaviour
         
     }
 
+    
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         transform.localScale = new Vector2(Mathf.Sign(rigidBody.velocity.x), 1f);
+    }
+
+    private void Die()
+    {
+        if (enemyCollider.IsTouchingLayers(LayerMask.GetMask("Projectile")))
+        {
+            Destroy(gameObject);
+        }
     }
 
     private bool IsFacingNormally()
