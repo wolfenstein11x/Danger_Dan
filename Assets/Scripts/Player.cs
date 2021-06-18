@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] float climbSpeed = 1.0f;
     [SerializeField] Bullet bullet = null;
     [SerializeField] Transform shootPoint = null;
-    [SerializeField] Vector2 deathKick = new Vector2(2f, 25f);
+    [SerializeField] Vector2 deathKick = new Vector2(-3f, 25f);
 
     private Rigidbody2D rigidBody;
     private Animator animator;

@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 751152191
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 5608954397432138313, guid: 16792d96409759542b3f310214373a7c,
     type: 3}
@@ -124,7 +124,7 @@ MonoBehaviour:
   climbSpeed: 5
   bullet: {fileID: -4743793702498700760, guid: f8369e668b4e04144af0d8e61a922a47, type: 3}
   shootPoint: {fileID: 4318540311214681967}
-  deathKick: {x: 2, y: 25}
+  deathKick: {x: -3, y: 25}
 --- !u!50 &2927645193142033017
 Rigidbody2D:
   serializedVersion: 4
@@ -212,7 +212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8011277497711784396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.376, y: 0.03, z: 0}
+  m_LocalPosition: {x: 0.656, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2927645193142033016}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9219437565898631854}
   - component: {fileID: 2780830234959042567}
   - component: {fileID: 2413039499089713092}
+  - component: {fileID: 162703612334138525}
   m_Layer: 10
   m_Name: EnemyBullet
   m_TagString: projectile
@@ -95,11 +96,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d531c491f597cdc47acb3a00ceb189e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 13
+  bulletSpeed: 15
+  lifeTime: 3
   explosionFX: {fileID: 3558518459022083281, guid: 5feda4b7a2bc63a4085cbc909929ca3c,
     type: 3}
   explosionTime: 0.5
-  lifeTime: 1
 --- !u!58 &2413039499089713092
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -116,3 +117,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.16
+--- !u!50 &162703612334138525
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3750051907566502572}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
