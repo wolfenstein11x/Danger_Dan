@@ -5,10 +5,11 @@ using UnityEngine;
 public class EnemyShooter : MonoBehaviour
 {
     [SerializeField] float range = 3f;
+    [SerializeField] float verticalWindow = 1f;
     [SerializeField] EnemyBullet bullet = null;
     [SerializeField] Transform shootPoint = null;
 
-    private float epsilon = 0.1f;
+    //private float epsilon = 0.1f;
     
     private Player target;
     private Animator animator;
@@ -38,7 +39,7 @@ public class EnemyShooter : MonoBehaviour
 
     private bool InRange()
     {
-        if (GetHorizontalDistanceToTarget() <= range && GetVerticalDistanceToTarget() <= epsilon) { return true; }
+        if (GetHorizontalDistanceToTarget() <= range && GetVerticalDistanceToTarget() <= verticalWindow) { return true; }
 
         else{ return false; }
     }

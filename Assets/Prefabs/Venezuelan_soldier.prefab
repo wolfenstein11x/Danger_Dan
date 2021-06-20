@@ -197,6 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 10
+  verticalWindow: 2
   bullet: {fileID: 2780830234959042567, guid: 61a2dab6555f57e41a73dfc220aec89c, type: 3}
   shootPoint: {fileID: 6001248758537908386}
 --- !u!1 &5888733737499948005
