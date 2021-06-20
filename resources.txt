@@ -1,4 +1,5 @@
 fonts: BM Army by BitmapMania
+       Capture it by Magique Fonts
 
 assets: Super Platformer Assets by FOXFIN (need to buy, 9 dollars)
 

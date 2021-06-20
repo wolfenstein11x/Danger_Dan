@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     private float gravityScaleInitial;
     private float epsilon = 0.0001f;
     private bool isAlive = true;
+    private bool dialogueMode = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         if (!isAlive) { return; }
+        if (dialogueMode) { return; }
 
         Run();
         FlipSprite();
@@ -150,5 +152,11 @@ public class Player : MonoBehaviour
     public void StopTime()
     {
         Time.timeScale = 0;
+    }
+
+    public void SetDialogueMode(bool setting)
+    {
+        animator.SetTrigger("idle");
+        dialogueMode = setting;
     }
 }
