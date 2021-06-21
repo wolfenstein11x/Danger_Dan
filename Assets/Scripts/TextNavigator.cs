@@ -9,6 +9,9 @@ public class TextNavigator : MonoBehaviour
     [SerializeField] bool preMissionDialogue = true;
     [SerializeField] bool inMissionDialogue = false;
     [SerializeField] bool endMissionDialogue = false;
+    [SerializeField] Canvas missionCompleteCanvas = null;
+    [SerializeField] float missionCompleteCanvasOffsetX = -5f;
+    [SerializeField] float missionCompleteCanvasOffsetY = 3f;
 
     private Text dialogueText;
     private int dialogueTextIdx;
@@ -64,7 +67,12 @@ public class TextNavigator : MonoBehaviour
 
         else if (endMissionDialogue)
         {
-            Debug.Log("Mission Complete!");
+            Player player = FindObjectOfType<Player>();
+
+            Vector2 missionCompleteCanvasPos = new Vector2(player.transform.position.x + missionCompleteCanvasOffsetX,
+                                                           player.transform.position.y + missionCompleteCanvasOffsetY);
+
+            Instantiate(missionCompleteCanvas, missionCompleteCanvasPos, Quaternion.identity);
         }
         
     }

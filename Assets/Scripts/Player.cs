@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
     [SerializeField] Transform shootPoint = null;
     [SerializeField] Vector2 deathKick = new Vector2(-3f, 25f);
     [SerializeField] Canvas loseCanvas = null;
-    [SerializeField] float deathTime = 3f;
 
     private Rigidbody2D rigidBody;
     private Animator animator;
