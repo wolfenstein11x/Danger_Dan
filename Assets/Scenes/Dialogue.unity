@@ -502,8 +502,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 45600e6d4339f4a45a4daae1ee4c2639, type: 3}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 2b73f4dea81998a478af07e6a9f1329c, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -514,7 +514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pack up your duffle bag and be ready to go by 0500 hours...
+  m_Text: Pack up your duffle bag and be ready to go by 0500...
 --- !u!222 &1509238430
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -523,6 +523,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509238427}
   m_CullTransparentMesh: 0
+--- !u!1001 &1634730818
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 191.20366
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 154.44627
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -823.6542
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2136966961383822440, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6302963979489511271, guid: 87ffd0b2ee6ba624c88a53537e7bab56,
+        type: 3}
+      propertyPath: m_Name
+      value: Music_march
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 87ffd0b2ee6ba624c88a53537e7bab56, type: 3}
 --- !u!1 &1891290608
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,8 +730,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 45600e6d4339f4a45a4daae1ee4c2639, type: 3}
-    m_FontSize: 13
+    m_Font: {fileID: 12800000, guid: 2b73f4dea81998a478af07e6a9f1329c, type: 3}
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -673,7 +742,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I need you to deploy to Venezuela and find him, and bring him home...
+  m_Text: I need you to deploy to Venezuela and find him, and bring him home, alive...
 --- !u!222 &2044157131
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -699,7 +768,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2059156077
 RectTransform:
   m_ObjectHideFlags: 0
@@ -739,8 +808,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 45600e6d4339f4a45a4daae1ee4c2639, type: 3}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 2b73f4dea81998a478af07e6a9f1329c, type: 3}
+    m_FontSize: 17
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -815,12 +884,12 @@ PrefabInstance:
     - target: {fileID: 7029064611636222192, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7029064611636222198, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7029064611636222198, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
@@ -837,7 +906,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: 45600e6d4339f4a45a4daae1ee4c2639,
+      objectReference: {fileID: 12800000, guid: 2b73f4dea81998a478af07e6a9f1329c,
         type: 3}
     - target: {fileID: 7029064611636222199, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
@@ -862,7 +931,7 @@ PrefabInstance:
     - target: {fileID: 7029064612105247219, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 14
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 7029064612105247219, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
@@ -879,6 +948,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7029064612105247219, guid: abb68609391dd83439b8a9d0ac48e569,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 2b73f4dea81998a478af07e6a9f1329c,
+        type: 3}
     - target: {fileID: 7029064612105247228, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -912,7 +987,7 @@ PrefabInstance:
     - target: {fileID: 7029064612274457630, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 13
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7029064612274457630, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
@@ -930,6 +1005,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7029064612274457630, guid: abb68609391dd83439b8a9d0ac48e569,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 2b73f4dea81998a478af07e6a9f1329c,
+        type: 3}
     - target: {fileID: 7029064612274457631, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_AnchoredPosition.y
