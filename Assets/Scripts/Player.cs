@@ -135,7 +135,7 @@ public class Player : MonoBehaviour
     {
         if (!(rigidBody.velocity.x < epsilon && rigidBody.velocity.y < epsilon)) { return; }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetButtonDown("Fire1")) //GetKeyDown(KeyCode.F))
         {
             animator.SetTrigger("shooting");
             FireBullet();

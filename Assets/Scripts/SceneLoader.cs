@@ -33,6 +33,11 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("StartMenu");
     }
 
+    public void LoadControls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
     public void LoadCredits()
     {
         SceneManager.LoadScene("Credits");
