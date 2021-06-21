@@ -376,6 +376,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &959985517
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619041, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321401696792619055, guid: 4ab341cbbcf69f14186f36e3b1e3ef69,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ab341cbbcf69f14186f36e3b1e3ef69, type: 3}
 --- !u!1 &1509238427
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1509238428
 RectTransform:
   m_ObjectHideFlags: 0
@@ -445,7 +514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: sample text
+  m_Text: Pack up your duffle bag and be ready to go by 0500 hours...
 --- !u!222 &1509238430
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -552,7 +621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2044157129
 RectTransform:
   m_ObjectHideFlags: 0
@@ -604,7 +673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: sample text
+  m_Text: I need you to deploy to Venezuela and find him, and bring him home...
 --- !u!222 &2044157131
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -682,7 +751,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: sample text
+  m_Text: Well don't just stand there! Go on and pack up your duffle, soldier!
 --- !u!222 &2059156079
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -746,7 +815,7 @@ PrefabInstance:
     - target: {fileID: 7029064611636222192, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7029064611636222198, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
@@ -761,8 +830,15 @@ PrefabInstance:
     - target: {fileID: 7029064611636222198, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_Text
-      value: Danger Dan! I have a mission for you
+      value: At ease, soldier! I'm 1SG Lance Charter. I'll be giving your mission
+        brief...
       objectReference: {fileID: 0}
+    - target: {fileID: 7029064611636222198, guid: abb68609391dd83439b8a9d0ac48e569,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 45600e6d4339f4a45a4daae1ee4c2639,
+        type: 3}
     - target: {fileID: 7029064611636222199, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -786,7 +862,7 @@ PrefabInstance:
     - target: {fileID: 7029064612105247219, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7029064612105247219, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
@@ -796,7 +872,12 @@ PrefabInstance:
     - target: {fileID: 7029064612105247219, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_Text
-      value: I need you to go to Venezuela on a top secret mission
+      value: I aint gonna sugar coat it... this is a dangerous mission...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029064612105247219, guid: abb68609391dd83439b8a9d0ac48e569,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7029064612105247228, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
@@ -821,12 +902,12 @@ PrefabInstance:
     - target: {fileID: 7029064612105247229, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7029064612274457624, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7029064612274457630, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
@@ -841,7 +922,13 @@ PrefabInstance:
     - target: {fileID: 7029064612274457630, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}
       propertyPath: m_Text
-      value: sample text
+      value: One of your battle buddies has been captured... his name is Private
+        Stiltz...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7029064612274457630, guid: abb68609391dd83439b8a9d0ac48e569,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7029064612274457631, guid: abb68609391dd83439b8a9d0ac48e569,
         type: 3}

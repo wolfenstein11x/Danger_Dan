@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class TextNavigator : MonoBehaviour
 {
     [SerializeField] Text[] dialogueTexts = null;
+    [SerializeField] bool preMissionDialogue = true;
+    [SerializeField] bool inMissionDialogue = false;
+    [SerializeField] bool endMissionDialogue = false;
+
     private Text dialogueText;
     private int dialogueTextIdx;
 
@@ -31,7 +35,11 @@ public class TextNavigator : MonoBehaviour
 
     private void SetActiveText(int idx)
     {
-        if (idx >= dialogueTexts.Length) { return; }
+        if (idx >= dialogueTexts.Length) 
+        {
+            HandleEndDialogue();
+            return; 
+        }
 
         foreach (Text text in dialogueTexts)
         {
@@ -39,5 +47,25 @@ public class TextNavigator : MonoBehaviour
         }
 
         dialogueTexts[idx].gameObject.SetActive(true);
+    }
+
+    private void HandleEndDialogue()
+    {
+        if (preMissionDialogue)
+        {
+            FindObjectOfType<SceneLoader>().NextScene();
+        }
+
+        else if (inMissionDialogue)
+        {
+            // TODO: handle this
+            return;
+        }
+
+        else if (endMissionDialogue)
+        {
+            Debug.Log("Mission Complete!");
+        }
+        
     }
 }

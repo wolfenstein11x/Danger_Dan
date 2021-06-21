@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     [SerializeField] Bullet bullet = null;
     [SerializeField] Transform shootPoint = null;
     [SerializeField] Vector2 deathKick = new Vector2(-3f, 25f);
+    [SerializeField] Canvas loseCanvas = null;
+    [SerializeField] float deathTime = 3f;
 
     private Rigidbody2D rigidBody;
     private Animator animator;
@@ -33,7 +35,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isAlive) { return; }
+        if (!isAlive) 
+        {
+            return; 
+        }
         if (dialogueMode) { return; }
 
         Run();
@@ -117,8 +122,14 @@ public class Player : MonoBehaviour
             isAlive = false;
             animator.SetTrigger("die");
             rigidBody.velocity = deathKick;
+
         }
         
+    }
+
+    public void DisplayLoseCanvas()
+    {
+        Instantiate(loseCanvas, transform.position, Quaternion.identity);
     }
 
     private void Shoot()
@@ -159,4 +170,5 @@ public class Player : MonoBehaviour
         animator.SetTrigger("idle");
         dialogueMode = setting;
     }
+
 }
